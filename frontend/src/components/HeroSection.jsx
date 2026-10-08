@@ -1,30 +1,38 @@
-import React from "react";
-import Navbar from "./Navbar"; 
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
     <section className="heroSection" id="heroSection">
-      <Navbar />
       <div className="hero__container">
-
-        {/* LEFT — text content */}
         <div className="hero__content">
-          <p className="hero__tagline">Fresh · Authentic · Nepali</p>
+          <p className="eyebrow hero__tagline">A taste of Nepal, thoughtfully served</p>
           <h1 className="hero__title">
-            Enjoy <span className="hero__title--accent">Delicious</span> Foods
+            Gather around<br />
+            <span className="hero__title--accent">something</span> special.
           </h1>
           <p className="hero__subtitle">
-            Bold flavors, fresh ingredients, and recipes crafted to take you
-            on an unforgettable culinary journey.
+            Seasonal ingredients, soulful Nepali flavors, and a warm welcome in the heart of Kathmandu.
           </p>
+          <div className="hero__actions">
+            <Link className="button button--dark" to="/menu">
+              Explore the menu <ArrowRight size={17} aria-hidden="true" />
+            </Link>
+            <Link className="text-link" to="/reservations">Reserve a table</Link>
+          </div>
+          <div className="hero__note">
+            <span className="hero__note-mark" aria-hidden="true">✳</span>
+            <span>Made with care. Shared with joy.</span>
+          </div>
         </div>
-
-        {/* RIGHT — image grid */}
         <div className="hero__imageGrid">
-          <img src="/hero1.jpg" alt="Signature dish" className="hero__img hero__img--tall" />
-          <img src="/hero2.jpeg" alt="Popular dish" className="hero__img" />
+          <img src="/hero1.jpg" alt="A freshly prepared signature dish" className="hero__img hero__img--tall" />
+          <img src="/hero2.jpeg" alt="A colorful plate made with fresh ingredients" className="hero__img" />
+          <div className="hero__image-caption">
+            <span>Rooted in tradition</span>
+            <span>Made for today</span>
+          </div>
         </div>
-
       </div>
     </section>
   );

@@ -33,7 +33,51 @@ const reservationSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-
+    guestCount: {
+        type: Number,
+        required: [true, "Please select how many guests are attending."],
+        min: [1, "A reservation must be for at least one guest."],
+        validate: {
+            validator: Number.isInteger,
+            message: "Guest count must be a whole number.",
+        },
+    },
+    orderItems: {
+        type: [{
+            dishId: {
+                type: Number,
+                required: true,
+                min: 1,
+            },
+            name: {
+                type: String,
+                required: true,
+                trim: true,
+                maxLength: 80,
+            },
+            course: {
+                type: String,
+                required: true,
+                enum: ["Appetizer", "Main Course", "Dessert", "Drink"],
+            },
+            price: {
+                type: Number,
+                required: true,
+                min: 0,
+            },
+            quantity: {
+                type: Number,
+                required: true,
+                min: 1,
+                max: 10,
+            },
+        }],
+        default: [],
+        validate: {
+            validator: (items) => items.length <= 50,
+            message: "A reservation cannot contain more than 50 menu selections.",
+        },
+    },
 });
 
 export const Reservation = mongoose.model("Reservation", reservationSchema);

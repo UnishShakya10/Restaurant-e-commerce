@@ -1,32 +1,43 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { useRestaurantData } from "../context/RestaurantDataContext.js";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const [show, setShow] = useState(false);
-    const { navbarLinks } = useRestaurantData();
+    const closeMenu = () => setShow(false);
+    const links = [
+        { to: "/", title: "Home" },
+        { to: "/about", title: "Our story" },
+        { to: "/menu", title: "Menu" },
+        { to: "/contact", title: "Contact" },
+    ];
 
     return (
-        <nav>
-            <div className="logo">RESTAURANT</div>
-            <div className={show ? "navLinks showmenu": "navLinks"}>
-                <div className="links">
-                    {
-                        navbarLinks.map(element=>{
-                            return(
-                                <a
-                                    href={`#${element.link}`}
-                                    key={element.id}
-                                    onClick={() => setShow(false)}
-                                >
-                                    {element.title}
-                                </a>
-                            );
-                        })
-                    }
+        <header className="site-header">
+            <nav className="site-nav" aria-label="Main navigation">
+                <Link className="brand" to="/" onClick={closeMenu} aria-label="Newa Ghasa home">
+                    <span className="brand__mark" aria-hidden="true">NG</span>
+                    <span className="brand__text">
+                        <strong>Newa Ghasa</strong>
+                        <span>Kathmandu, Nepal</span>
+                    </span>
+                </Link>
+                <div className={show ? "navLinks showmenu" : "navLinks"}>
+                    <div className="links">
+                        {links.map(({ to, title }) => (
+                            <NavLink
+                                end={to === "/"}
+                                to={to}
+                                key={to}
+                                onClick={closeMenu}
+                                className={({ isActive }) => isActive ? "nav-link nav-link--active" : "nav-link"}
+                            >
+                                {title}
+                            </NavLink>
+                        ))}
+                    </div>
+                    <Link className="menuBtn" to="/reservations" onClick={closeMenu}>Book a table</Link>
                 </div>
-                <a className="menuBtn" href="#menu" onClick={() => setShow(false)}>OUR MENU</a>
-            </div>
             <button
                 type="button"
                 className="hamburger"
@@ -36,7 +47,8 @@ const Navbar = () => {
             >
                 {show ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
             </button>
-        </nav>
+            </nav>
+        </header>
     );
 };
 

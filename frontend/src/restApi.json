@@ -20,56 +20,6 @@
                 "description": "Craving something delicious? We get it to your door hot, fresh, and on time — every single time. Because great food should never make you wait." 
             }
         ],
-        "dishes": [
-            {
-                "id": 1,
-                "image": "./dinner1.jpeg",
-                "title": "CHIURA SET ",
-                "category": "Dinner"
-            },
-            {
-                "id": 2,
-                "image": "./dinner2.jpeg",
-                "title": "MALAI KOFTA",
-                "category": "Dinner"
-            },
-            {
-                "id": 3,
-                "image": "./breakfast1.jpeg",
-                "title": "SELROTI",
-                "category": "Breakfast"
-            },
-            {
-                "id": 4,
-                "image": "./dinner3.jpeg",
-                "title": "NEPALI THALI (Dal Bhat Set)",
-                "category": "Dinner"
-            },
-            {
-                "id": 5,
-                "image": "./lunch1.jpeg",
-                "title": "BEATEN RICE PLATTER",
-                "category": "Lunch"
-            },
-            {
-                "id": 6,
-                "image": "./dinner4.jpeg",
-                "title": "OLIVIER SALAD",
-                "category": "Dinner"
-            },
-            {
-                "id": 7,
-                "image": "./dinner5.jpeg",
-                "title": "ROTI TARKARI",
-                "category": "Dinner"
-            },
-            {
-                "id": 8,
-                "image": "./dinner6.jpeg",
-                "title": "ALOO GOBI",
-                "category": "Dinner"
-            }
-        ],
         "team": [
             {
                 "id": 1,

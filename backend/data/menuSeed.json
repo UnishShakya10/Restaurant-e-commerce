@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "image": "./dinner1.jpeg",
+    "title": "CHIURA SET",
+    "category": "Dinner",
+    "course": "Main Course",
+    "description": "A satisfying Nepali spread built around beaten rice and savory sides.",
+    "price": 450
+  },
+  {
+    "id": 2,
+    "image": "./dinner2.jpeg",
+    "title": "MALAI KOFTA",
+    "category": "Dinner",
+    "course": "Main Course",
+    "description": "Tender vegetable dumplings in a gently spiced, creamy curry.",
+    "price": 520
+  },
+  {
+    "id": 3,
+    "image": "./breakfast1.jpeg",
+    "title": "SELROTI",
+    "category": "Breakfast",
+    "course": "Dessert",
+    "description": "Traditional ring-shaped rice bread with a delicate, crisp edge.",
+    "price": 220
+  },
+  {
+    "id": 4,
+    "image": "./dinner3.jpeg",
+    "title": "NEPALI THALI (Dal Bhat Set)",
+    "category": "Dinner",
+    "course": "Main Course",
+    "description": "A comforting Nepali platter served with rice, lentils, and seasonal sides.",
+    "price": 580
+  },
+  {
+    "id": 5,
+    "image": "./lunch1.jpeg",
+    "title": "BEATEN RICE PLATTER",
+    "category": "Lunch",
+    "course": "Main Course",
+    "description": "A lively platter of beaten rice and classic savory accompaniments.",
+    "price": 480
+  },
+  {
+    "id": 6,
+    "image": "./dinner4.jpeg",
+    "title": "OLIVIER SALAD",
+    "category": "Dinner",
+    "course": "Appetizer",
+    "description": "A hearty, creamy salad tossed with crisp vegetables.",
+    "price": 350
+  },
+  {
+    "id": 7,
+    "image": "./dinner5.jpeg",
+    "title": "ROTI TARKARI",
+    "category": "Dinner",
+    "course": "Main Course",
+    "description": "Soft flatbread served alongside a warmly spiced vegetable curry.",
+    "price": 320
+  },
+  {
+    "id": 8,
+    "image": "./dinner6.jpeg",
+    "title": "ALOO GOBI",
+    "category": "Dinner",
+    "course": "Main Course",
+    "description": "Potato and cauliflower cooked with aromatic spices.",
+    "price": 340
+  },
+  {
+    "id": 9,
+    "image": "./lunch1.jpeg",
+    "title": "CHICKEN MOMO",
+    "category": "Appetizer",
+    "course": "Appetizer",
+    "description": "Juicy, hand-folded dumplings served with a tangy tomato achar.",
+    "price": 420
+  },
+  {
+    "id": 10,
+    "image": "./dinner1.jpeg",
+    "title": "VEGETABLE MOMO",
+    "category": "Appetizer",
+    "course": "Appetizer",
+    "description": "Steamed dumplings filled with seasoned vegetables and herbs.",
+    "price": 350
+  },
+  {
+    "id": 11,
+    "image": "./dinner3.jpeg",
+    "title": "CHICKEN THUKPA",
+    "category": "Lunch",
+    "course": "Main Course",
+    "description": "A warming noodle soup with chicken, vegetables, and fragrant broth.",
+    "price": 390
+  },
+  {
+    "id": 12,
+    "image": "./dinner2.jpeg",
+    "title": "CHICKEN CHOW MEIN",
+    "category": "Lunch",
+    "course": "Main Course",
+    "description": "Stir-fried noodles with chicken and crunchy seasonal vegetables.",
+    "price": 360
+  },
+  {
+    "id": 13,
+    "image": "./dinner5.jpeg",
+    "title": "CHICKEN SEKUWA",
+    "category": "Dinner",
+    "course": "Main Course",
+    "description": "Nepali-style marinated chicken, grilled with warming spices.",
+    "price": 520
+  },
+  {
+    "id": 14,
+    "image": "./dinner4.jpeg",
+    "title": "BARA",
+    "category": "Appetizer",
+    "course": "Appetizer",
+    "description": "A savory lentil pancake with a crisp outside and tender center.",
+    "price": 280
+  },
+  {
+    "id": 15,
+    "image": "./breakfast1.jpeg",
+    "title": "YOMARI",
+    "category": "Dessert",
+    "course": "Dessert",
+    "description": "A traditional steamed rice-flour dumpling with a sweet filling.",
+    "price": 250
+  },
+  {
+    "id": 16,
+    "image": "./drink.svg",
+    "title": "MASALA CHIYA",
+    "category": "Drinks",
+    "course": "Drink",
+    "description": "Nepali milk tea simmered with warming spices.",
+    "price": 120
+  },
+  {
+    "id": 17,
+    "image": "./drink.svg",
+    "title": "MANGO LASSI",
+    "category": "Drinks",
+    "course": "Drink",
+    "description": "A cool, creamy yogurt drink blended with mango.",
+    "price": 220
+  },
+  {
+    "id": 18,
+    "image": "./drink.svg",
+    "title": "FRESH LEMON SODA",
+    "category": "Drinks",
+    "course": "Drink",
+    "description": "Bright lemon, sparkling soda, and a little sweetness.",
+    "price": 180
+  }
+]

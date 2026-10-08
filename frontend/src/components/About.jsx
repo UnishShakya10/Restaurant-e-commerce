@@ -7,21 +7,19 @@ const About = () => {
             <div className="container">
                 <div className="banner">
                     <div className="top">
-                        <h1 className="heading">ABOUT US</h1>
-                        <p>Fresh ingredients, bold flavors, unforgettable dining experiences.</p>
+                        <p className="eyebrow">A little about us</p>
+                        <h2 className="heading">Our table is your table.</h2>
+                        <p>Fresh ingredients, Nepali roots, and hospitality from the heart.</p>
                     </div>
                     <p className="mid">
-                        We are not just a restaurant — we are a culinary destination. Born from a passion for bold flavors and exceptional dining, we have spent years perfecting recipes that honor tradition while embracing innovation. Every plate we serve is a reflection of our commitment to quality, freshness, and creativity. Come hungry, leave inspired.
+                        We bring people together around the flavors we grew up with and the dishes we love discovering. Every plate is made with care, inspired by Nepal’s generous food culture, and served with the kind of welcome that makes you want to stay a little longer.
                     </p>
-                    <Link to={"/"}>
-                        Explore Menu 
-                        <span>
-                            <ArrowRight aria-hidden="true" />
-                        </span>
+                    <Link className="text-link" to="/about">
+                        Get to know us <ArrowRight size={16} aria-hidden="true" />
                     </Link>
                 </div>
                 <div className="banner">
-                    <img src="/about.jpg" alt="about" />
+                    <img src="/about.jpg" alt="A warm, welcoming view of the restaurant" loading="lazy" />
                 </div>
             </div>
         </section>

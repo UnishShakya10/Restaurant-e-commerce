@@ -11,7 +11,7 @@ const WhoAreWe = () => {
                         who_we_are.slice(0,2).map(element=>{
                             return(
                                 <div className="card" key={element.id}>
-                                    <h1 style={{fontWeight: "300"}} className="heading">{element.number}</h1>
+                                    <h2 style={{fontWeight: "300"}} className="heading">{element.number}</h2>
                                     <p>{element.title}</p>
                                 </div>
                             )

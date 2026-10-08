@@ -7,7 +7,7 @@ const Team = () => {
         <section className="team" id="team">
             <div className="container">
                 <div className="heading_section">
-                    <h1 className="heading">OUR TEAM</h1>
+                    <h2 className="heading">OUR TEAM</h2>
                     <p>Behind every great dish is an even greater team. Our passionate chefs and dedicated staff bring years of experience, creativity, and love for food to the table every single day. Meet the people who make the magic happen.</p>
 
                 </div>

@@ -24,7 +24,11 @@ const Success = () => {
             <section className="notFound">
                 <div className="container">
                     <img src="/sandwich.png" alt="success" />
-                    <h1>Redirecting to Home in {countdown} seconds...</h1>
+                    <h1>Reservation request received</h1>
+                    <p className="success-message">
+                        Your request and dish selections have been submitted. The restaurant can confirm table and dish availability with you directly.
+                    </p>
+                    <p>Returning to the home page in {countdown} seconds...</p>
                     <Link to={"/"}>Back to Home <ArrowRight aria-hidden="true" /></Link>
                 </div>
             </section>
