@@ -4,7 +4,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        restaurant: "#D85A30",
+        paper: "#fbfaf7",
+        cream: "#f1eee6",
+        green: "#263a31",
+        ink: "#262a24",
+        muted: "#72746d",
+        accent: "#a97142",
+      },
+      fontFamily: {
+        sans: ["DM Sans", "sans-serif"],
+        display: ["Playfair Display", "Georgia", "serif"],
       },
     },
   },

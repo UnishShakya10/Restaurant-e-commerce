@@ -1,36 +1,57 @@
-# Restaurant-Web-Application
+# Newa Ghasa
 
-A full-stack restaurant web application built with the MERN stack.
+A full-stack restaurant website and reservation application for **Newa Ghasa** in Kathmandu, Nepal. Built and maintained by [Unish Shakya](https://github.com/UnishShakya10).
+
+**GitHub:** [UnishShakya10/Restaurant-e-commerce](https://github.com/UnishShakya10/Restaurant-e-commerce)
 
 ## Features
-- Responsive UI with hamburger menu and smooth scroll navigation
-- Dynamic content rendering from REST API
-- Reservation form with backend integration
-- Mobile responsive design
 
-## Tech Stack
+- Responsive, multi-page restaurant website
+- Restaurant menu loaded from MongoDB
+- Menu seeding with `npm run seed:menu`
+- Reservation requests with guest count and optional dish selections
+- Reservation and menu APIs built with Express and Mongoose
 
-### Frontend
-- React
-- Vite
-- React Router
-- Tailwind CSS
-- Mantine UI
-- Lucide React
-- Context API
+## Tech stack
 
-### Backend
-- Node.js
-- Express.js
-- MongoDB
-- Mongoose
+- **Frontend:** React, Vite, React Router, Mantine, Tailwind CSS
+- **Backend:** Node.js, Express, MongoDB, Mongoose
 
-## Running the project locally
+## Run locally
 
-1. In `backend`, copy `config/config.env.example` to `config/config.env` and set `MONGO_URI`, `PORT`, and `FRONTEND_URL`.
-2. In `frontend`, copy `.env.example` to `.env` if the API is not running at the default URL.
-3. Install dependencies in both folders with `npm install`.
-4. In `backend`, run `npm run seed:menu` once to load or update the menu items in MongoDB.
-5. Start the backend with `npm run dev` and the frontend with `npm run dev` in separate terminals.
+### Requirements
 
-The menu catalog is stored in `backend/data/menuSeed.json` and loaded into MongoDB with `npm run seed:menu`. The backend serves the database menu at `GET /api/v1/menu`. Reservation requests store selected dishes as snapshots of their database name, course, and price.
+- Node.js and npm
+- A MongoDB connection string
+
+### Configure environment
+
+1. In `backend`, copy `config/config.env.example` to `config/config.env`.
+2. Set `MONGO_URI`, `PORT`, and `FRONTEND_URL` in `backend/config/config.env`.
+3. The app will also fall back to a local in-memory MongoDB instance if the configured database is unavailable, which makes local development easier.
+4. The repository already includes a working `frontend/.env` pointing to the default backend URL.
+
+Do not commit `backend/config/config.env` or any real credentials.
+
+### Install and start
+
+Open separate terminals for the backend and frontend:
+
+```powershell
+cd backend
+npm install
+npm run seed:menu
+npm run dev
+```
+
+```powershell
+cd frontend
+npm install
+npm run dev
+```
+
+The menu catalog is maintained in `backend/data/menuSeed.json` and seeded into MongoDB. The API exposes menu items at `GET /api/v1/menu`; reservations are submitted at `POST /api/v1/reservation/send`.
+
+## Project owner
+
+Created and maintained by [Unish Shakya](https://github.com/UnishShakya10). The source repository is [Restaurant-e-commerce](https://github.com/UnishShakya10/Restaurant-e-commerce).

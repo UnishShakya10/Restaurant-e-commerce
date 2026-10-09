@@ -1,7 +1,7 @@
 {
-  "name": "backend",
+  "name": "newa-ghasa-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Express and MongoDB API for the Newa Ghasa restaurant website",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -9,12 +9,13 @@
     "dev": "nodemon server.js",
     "seed:menu": "node scripts/seedMenu.js"
   },
-  "author": "",
+  "author": "Unish Shakya",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
+    "mongodb-memory-server": "^10.2.0",
     "mongoose": "^9.7.0",
     "validator": "^13.15.35"
   },

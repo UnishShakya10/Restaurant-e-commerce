@@ -1,7 +1,9 @@
 {
-  "name": "frontend",
+  "name": "newa-ghasa-frontend",
   "private": true,
   "version": "0.0.0",
+  "description": "React website for Newa Ghasa restaurant",
+  "author": "Unish Shakya",
   "type": "module",
   "scripts": {
     "dev": "vite",
